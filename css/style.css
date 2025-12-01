@@ -29,6 +29,19 @@
   align-items: flex-start;
 }
 
+.tp-item {
+  flex-grow: 1;
+}
+
+.tp-item > h1 {
+  font-size: 48px;
+}
+
+.tp-item > p {
+  font-size: 14px;
+  color: rgb(43, 41, 41);
+}
+
 .price {
   width: 450px;
 }
@@ -42,42 +55,44 @@
 
 .card-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
 }
 
 .card-item {
-  width: calc(100% / 3 - ((15px * 2) / 3));
+  width: calc(100% / 3 - ((30px * 2) / 3));
   flex-grow: 1;
   flex-shrink: 0;
   border-radius: 20px;
   padding: 20px;
   min-width: 330px;
+  box-shadow: 5px 5px 20px -4px #000000;
+  overflow: hidden;
 }
 
 .dollaro {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
 }
 
 .importo {
   font-weight: 900;
-  font-size: 90px;
+  font-size: 70px;
   text-align: center;
 }
 
 .mo {
   text-align: center;
   color: rgba(0, 0, 0, 0.521);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .price-mon {
-  width: 280px;
+  width: 220px;
   margin: 0 auto;
 }
 
@@ -146,11 +161,12 @@
   align-items: center;
   padding: 8px 20px;
   font-size: 24px;
-  margin: 10px 0 10px 30px;
+  margin: 10px;
 }
 
 .item-list div:last-child {
   flex: 1 1 1;
+  width: 330px;
 }
 
 .item-list div:first-child {
@@ -160,4 +176,27 @@
 
 .item-list:last-child {
   margin-bottom: 30px;
+}
+
+.card-item:nth-child(2) {
+  background-color: #6500ff;
+  color: white;
+}
+
+.card-item:nth-child(2) .btn {
+  background-color: white;
+  color: #6500ff;
+}
+
+.card-item:nth-child(2) .perc-sconto {
+  color: black;
+}
+
+.card-item:nth-child(2) .mo {
+  color: white;
+}
+
+.card-item:last-child .price-mon {
+  width: 265px;
+  margin: 0 auto;
 }
