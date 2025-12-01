@@ -3,3 +3,48 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.debug {
+  border: 1px red solid;
+}
+
+.main-container {
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.top-page {
+  max-width: 900px;
+  min-height: 80px;
+  margin: 0 auto 10px auto;
+}
+
+.card-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  height: calc(100vh - 100px - 20px);
+}
+
+/* HEAD PAGE */
+
+.tp-flex-container {
+  min-height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tp-item {
+  height: 30px;
+  min-width: 300px;
+}
+
+.sub {
+  margin-left: auto;
+}
+
+/* BOTTOM PAGE */
