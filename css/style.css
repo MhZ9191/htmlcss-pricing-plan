@@ -11,12 +11,13 @@
 .main-container {
   padding: 10px;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 /* HEAD PAGE */
 
 .top-page {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 10px auto;
 }
 
@@ -40,7 +41,7 @@
 /* BOTTOM PAGE */
 
 .card-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -49,9 +50,114 @@
 }
 
 .card-item {
-  width: calc(100% / 3 - ((15 * 2) / 3));
-  height: 90px;
+  width: calc(100% / 3 - ((15px * 2) / 3));
   flex-grow: 1;
   flex-shrink: 0;
-  background-color: red;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 330px;
+}
+
+.dollaro {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+}
+
+.importo {
+  font-weight: 900;
+  font-size: 90px;
+  text-align: center;
+}
+
+.mo {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.521);
+  font-size: 22px;
+}
+
+.price-mon {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.item-head {
+  margin-bottom: 20px;
+}
+
+.item-head > h2 {
+  font-size: 48px;
+}
+
+.item-head > p {
+  font-size: 22px;
+}
+
+.perc-sconto {
+  font-size: 20px;
+  background-color: #e3e3e3;
+  width: 80px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.sconto {
+  padding-top: 8px;
+  margin: 0 auto;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.sconto > span {
+  font-size: 18px;
+}
+
+.btn {
+  margin: 32px auto;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #6500ff;
+  color: white;
+  font-size: 24px;
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+}
+
+.btn:hover {
+  background-color: #400994;
+  transform: translateY(-1px);
+  transition: transform 0.1s linear;
+}
+
+.list-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 24px;
+  margin: 10px 0 10px 30px;
+}
+
+.item-list div:last-child {
+  flex: 1 1 1;
+}
+
+.item-list div:first-child {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.item-list:last-child {
+  margin-bottom: 30px;
 }
